@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/content.css">
+</head>
+
+<body onload="time()">
+    <!-- header -->
+    <header class="header">
+        <div class="header__logout">
+            <a href="">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <div class="container-fluid sidebar">
+        <!-- admin -->
+        <div class="sidebar__admin">
+            <img src="https://kynguyenlamdep.com/wp-content/uploads/2022/06/anh-gai-xinh-cuc-dep.jpg" alt=""
+                class="sidebar__admin-avatar">
+            <div class="sidebar__admin-body">
+                <h3>đặng tiến hưng</h3>
+                <p>Chào mừng bạn đã quay trở lại!</p>
+            </div>
+        </div>
+
+        <!-- content -->
+        <aside class="sidebar__menu">
+            <ul class="sidebar__menu-list">
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-brands fa-microsoft"></i>
+                        Bảng điều khiển
+                    </a>
+                </li>
+                <li>
+                    <a href="./product.html" class="sidebar__menu-link">
+                        <i class="fa-solid fa-list-check"></i>
+                        Quản lý sản phẩm
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-solid fa-address-card"></i>
+                        Quản lý user
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                        Quản lý bình luận
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- container -->
+    <main class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="app__title">
+                    <h3 class="app__title-title">Quản lý sản phẩm</h3>
+                    <div id="clock"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container main -->
+        <main class="container__main">
+            <div class="container__main-handler">
+                <div class="container__main-link">
+                    <a data-bs-toggle="modal" data-bs-target="#openModal" class="text-white">
+                        <i class="fa-solid fa-plus"></i>
+                        Tạo sản phẩm mới
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-trash-can"></i>
+                        Xóa sản phẩm
+                    </a>
+                </div>
+                <div class="container__main-search">
+                    <form action="">
+                        <input type="search" name="search" id="" placeholder="Tìm kiếm sản phẩm">
+                    </form>
+                </div>
+            </div>
+            <div class="container__table">
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                        <th>Country</th>
+                        <th>Description</th>
+                        <th>Tính năng</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>
+                            <img src="https://icdn.dantri.com.vn/thumb_w/640/2020/08/30/diem-danh-nhung-guong-mat-hot-girl-noi-bat-trong-thang-8-docx-1598788426579.jpeg"
+                                alt="" class="img_item">
+                        </td>
+                        <td class="container__table-desc-parent">
+                            <div class="container__table-desc">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit eos recusandae unde
+                                    itaque laborum laboriosam voluptatibus assumenda! Unde sint provident earum,
+                                    repellendus placeat saepe maiores commodi nisi temporibus tempora quo natus? Neque
+                                    perferendis quia mollitia at facere est soluta autem! Voluptatem eum porro esse
+                                    necessitatibus architecto? Reiciendis facilis nisi laborum inventore! Dolore aliquid
+                                    ullam cum odit labore officiis expedita quo soluta dicta, vitae consequatur ratione
+                                    eveniet, quod itaque, minus dolores magnam. Repudiandae magnam voluptatibus sed
+                                    debitis culpa, nesciunt est soluta dolor explicabo inventore dolorum neque nobis
+                                    pariatur quae totam, sequi laboriosam quidem. Neque totam, exercitationem incidunt
+                                    architecto quos inventore nemo autem quo dicta doloremque odit facilis! Ea, facilis
+                                    quam officiis minus eum itaque porro iste, libero vitae odio quaerat corrupti.
+                                    Distinctio ut aliquam illum at itaque porro, expedita laboriosam quas sequi dolorum
+                                    fugit molestiae, atque iusto eaque iste fugiat qui magnam similique minus a?
+                                    Deserunt ipsam ad praesentium quisquam minus reiciendis reprehenderit minima
+                                    accusamus, consequuntur a dolore perspiciatis fugit aperiam? Impedit tempore
+                                    recusandae laudantium maxime magnam! Vero, at officia unde consequuntur, fugit
+                                    blanditiis cupiditate dolore qui eligendi deleniti vitae incidunt accusantium animi
+                                    rerum soluta doloremque veniam laboriosam exercitationem earum, reprehenderit error
+                                    maxime ad aliquid. Rem, quis. Ex quia nostrum harum?</p>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="edit.html">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="./js/time.js"></script>
+<script src="js/chart.js"></script>
+
+</html>

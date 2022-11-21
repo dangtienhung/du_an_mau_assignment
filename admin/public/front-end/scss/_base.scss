@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+$primary-color: #df3b31;
+$white-color: #ffffff;
+$text-color: #4f4f4f;
+$black-color: #000;
+
+/** space height */
+$header-height: 5rem;
+$sidebar-width: 28rem;
+$container__title-height: 4rem;
+
+/** color-box */
+$box-shadow: 9px 9px 9px #5a5a5a, 9px 9px 9px #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

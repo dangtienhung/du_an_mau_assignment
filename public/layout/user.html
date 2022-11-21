@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Adara - Modern & Multipurpose eCommerce Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jarallax.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login-scss.css">
+    <link rel="stylesheet" href="css/content-user.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="header__logout">
+            <a href="">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <div class="container-fluid sidebar">
+        <!-- admin -->
+        <div class="sidebar__admin">
+            <img src="https://kynguyenlamdep.com/wp-content/uploads/2022/06/anh-gai-xinh-cuc-dep.jpg" alt=""
+                class="sidebar__admin-avatar">
+            <div class="sidebar__admin-body">
+                <h3 style="margin-bottom: 0;">đặng tiến hưng</h3>
+                <p style="margin-bottom: 0;">Chào mừng bạn đã quay trở lại!</p>
+            </div>
+        </div>
+
+        <!-- content -->
+        <aside class="sidebar__menu">
+            <ul class="sidebar__menu-list">
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-brands fa-microsoft"></i>
+                        Bảng điều khiển
+                    </a>
+                </li>
+                <li>
+                    <a href="./product.html" class="sidebar__menu-link">
+                        <i class="fa-solid fa-list-check"></i>
+                        Quản lý sản phẩm
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-solid fa-address-card"></i>
+                        Quản lý user
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                        Quản lý bình luận
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- container -->
+    <main class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="app__title">
+                    <h3 class="app__title-title" style="margin-bottom: 0; font-size: 20px;">Quản lý sản phẩm</h3>
+                    <div id="clock"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 col-lg-6">
+                <div class="row">
+                    <!-- item1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="analysis">
+                            <i class="icon--customer fa-solid fa-users-gear"></i>
+                            <div class="analysis__info">
+                                <h4>Tổng khách hàng</h4>
+                                <p><b>56 khách hàng</b></p>
+                                <p class="analysis__info-sum">Tổng số khách hàng được quản lý.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="analysis">
+                            <i class="icon--product fa-solid fa-database"></i>
+                            <div class="analysis__info">
+                                <h4>Tổng sản phẩm</h4>
+                                <p><b>56 sản phẩm</b></p>
+                                <p class="analysis__info-sum">Tổng số khách hàng được quản lý.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="analysis">
+                            <i class="icon--comment fa-brands fa-shopify"></i>
+                            <div class="analysis__info">
+                                <h4>Tổng bình luận</h4>
+                                <p><b>56 bình luận</b></p>
+                                <p class="analysis__info-sum">Tổng số bình luận được quản lý.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content__chart">
+                            <h3 class="content__chart-title">Phân tích dữ liệu</h3>
+                            <div class="content__chart-graph">
+                                <canvas id="myChart" width="400" height="400"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<!-- JS here -->
+<script src="js/vendor/jquery-3.5.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jarallax.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/nav-tool.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+
+</html>

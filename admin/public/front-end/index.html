@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./scss/content.css">
+</head>
+
+<body onload="time()">
+    <!-- header -->
+    <header class="header">
+        <div class="header__logout">
+            <a href="">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- aside -->
+    <div class="container-fluid sidebar">
+        <!-- admin -->
+        <div class="sidebar__admin">
+            <img src="https://kynguyenlamdep.com/wp-content/uploads/2022/06/anh-gai-xinh-cuc-dep.jpg" alt=""
+                class="sidebar__admin-avatar">
+            <div class="sidebar__admin-body">
+                <h3>đặng tiến hưng</h3>
+                <p>Chào mừng bạn đã quay trở lại!</p>
+            </div>
+        </div>
+
+        <!-- content -->
+        <aside class="sidebar__menu">
+            <ul class="sidebar__menu-list">
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-brands fa-microsoft"></i>
+                        Bảng điều khiển
+                    </a>
+                </li>
+                <li>
+                    <a href="./product.html" class="sidebar__menu-link">
+                        <i class="fa-solid fa-list-check"></i>
+                        Quản lý sản phẩm
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-solid fa-address-card"></i>
+                        Quản lý user
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar__menu-link">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                        Quản lý bình luận
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- container -->
+    <main class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="app__title">
+                    <h3 class="app__title-title">Quản lý sản phẩm</h3>
+                    <div id="clock"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 col-lg-6">
+                <div class="row">
+                    <!-- item1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="analysis">
+                            <i class="icon--customer fa-solid fa-users-gear"></i>
+                            <div class="analysis__info">
+                                <h4>Tổng khách hàng</h4>
+                                <p><b>56 khách hàng</b></p>
+                                <p class="analysis__info-sum">Tổng số khách hàng được quản lý.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="analysis">
+                            <i class="icon--product fa-solid fa-database"></i>
+                            <div class="analysis__info">
+                                <h4>Tổng sản phẩm</h4>
+                                <p><b>56 sản phẩm</b></p>
+                                <p class="analysis__info-sum">Tổng số khách hàng được quản lý.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="analysis">
+                            <i class="icon--comment fa-brands fa-shopify"></i>
+                            <div class="analysis__info">
+                                <h4>Tổng bình luận</h4>
+                                <p><b>56 bình luận</b></p>
+                                <p class="analysis__info-sum">Tổng số bình luận được quản lý.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content__chart">
+                            <h3 class="content__chart-title">Phân tích dữ liệu</h3>
+                            <div class="content__chart-graph">
+                                <canvas id="myChart" width="400" height="400"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="./js/time.js"></script>
+<script src="js/chart.js"></script>
+
+</html>

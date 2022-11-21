@@ -1,0 +1,173 @@
+@mixin flexbox($justify: center, $align: center, $direction: column, $wrap: wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+.container-login {
+    min-height: 100vh;
+    @include flexbox(center, center);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    background-color: rgb(5, 167, 245);
+
+    .container__wrapper {
+        position: relative;
+        width: 800px;
+        height: 500px;
+        margin: 20px;
+
+        .login__wrapper {
+            height: 420px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 40px;
+            @include flexbox(center, center);
+            box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+            border-radius: 0.6rem;
+            -webkit-border-radius: 0.6rem;
+            -moz-border-radius: 0.6rem;
+            -ms-border-radius: 0.6rem;
+            -o-border-radius: 0.6rem;
+
+            .log__box {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                @include flexbox();
+
+                h2 {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #fff;
+                    margin-bottom: 12px;
+                }
+
+                button {
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 8px 32px;
+                    background-color: #fff;
+                    border-radius: 0.4rem;
+                    -webkit-border-radius: 0.4rem;
+                    -moz-border-radius: 0.4rem;
+                    -ms-border-radius: 0.4rem;
+                    -o-border-radius: 0.4rem;
+                }
+            }
+        }
+
+        .login__form {
+            position: absolute;
+            top: 0;
+            background-color: #fff;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            z-index: 100;
+            @include flexbox();
+            box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+            transition: 0.5s;
+            overflow: hidden;
+            border-radius: 0.6rem;
+            -webkit-border-radius: 0.6rem;
+            -moz-border-radius: 0.6rem;
+            -ms-border-radius: 0.6rem;
+            -o-border-radius: 0.6rem;
+
+            .login__signin-form {
+                transition-delay: 0.25s;
+            }
+
+            .login__signup-form {
+                left: 100%;
+                display: none;
+            }
+
+            .log__form-form {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                padding: 50px;
+                transition: 0.5s;
+
+                h3 {
+                    text-align: center;
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                }
+
+                form {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        border: none;
+                        outline: none;
+                        padding: 10px;
+                        width: 100%;
+                        margin-bottom: 16px;
+                        border-radius: 4px;
+                        background-color: #efefef;
+                        font-size: 14px;
+                    }
+
+                    button {
+                        background-color: #03a9f4;
+                        max-width: 100px;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer;
+                        border-radius: 0.6rem;
+                        -webkit-border-radius: 0.6rem;
+                        -moz-border-radius: 0.6rem;
+                        -ms-border-radius: 0.6rem;
+                        -o-border-radius: 0.6rem;
+                        padding: 6px 12px;
+                    }
+
+                    .forgot {
+                        text-decoration: none;
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        .login__form.active {
+            left: 50%;
+
+            .login__signin-form {
+                left: -100%;
+                transition-delay: 0s;
+                opacity: 0;
+            }
+
+            .login__signup-form {
+                left: 0%;
+                transition-delay: 0.25s;
+                display: block;
+            }
+
+            .log__form-form {
+                form {
+                    button {
+                        background-color: #f43648;
+                    }
+                }
+            }
+        }
+    }
+}
